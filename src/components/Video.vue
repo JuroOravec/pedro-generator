@@ -745,7 +745,7 @@ watch([currMovieMode, currSettings], async () => {
   cursor: pointer;
 
   &.vertical {
-    height: inherit;
+    height: 100vh;
   }
   &.horizontal, &.square {
     height: fit-content;
