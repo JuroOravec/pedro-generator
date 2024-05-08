@@ -1,5 +1,6 @@
 <template>
   <div style="height: 100vh;">
+    <Ad ad-slot="top" />
     <h1 class="text-h2 text-center pb-8 pt-8 font-weight-medium">
       Pedro meme generator
     </h1>
@@ -115,7 +116,7 @@ import { inv } from 'mathjs'
 import chunk from 'lodash/chunk';
 
 import pedro from '../assets/pedro-placeholder.png';
-
+import Ad from './Ad.vue';
 import { recordCanvas, postprocessPedroVideo, exportPedroVideoAsMp4, exportPedroVideoAsGif, type ProgressInfo } from '../lib/videoRender';
 
 type ExportType = "mp4" | "gif";
